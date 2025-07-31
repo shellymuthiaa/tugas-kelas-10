@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelola User</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ADD8E6;
+            color: black ;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .header img {
+            width: 60px;
+            border-radius: 50%;
+        }
+        .header h2 {
+            margin: 0 0 0 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-actions {
+            display: flex;
+            gap: 10px;
+        }
+        .form-actions button {
+            padding: 10px 20px;
+            background: #ADD8E6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-actions button:hover {
+            background: #FFC0CB;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        table th {
+            background: #ADD8E6;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://photos.app.goo.gl/TAJ3vUSPq6XBYRoC7/60" >
+            <h2>Admin - Kelola User</h2>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="tipe-user">Tipe User</label>
+                <select id="tipe-user" name="tipe-user">
+                    <option value="Gudang">Gudang</option>
+                    <option value="Kasir">Kasir</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama">
+            </div>
+            <div class="form-group">
+                <label for="telepon">Telepon</label>
+                <input type="text" id="telepon" name="telepon" placeholder="Masukkan telepon">
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat</label>
+                <input type="text" id="alamat" name="alamat" placeholder="Masukkan alamat">
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Masukkan username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Masukkan password">
+            </div>
+            <div class="form-actions">
+                <button type="button">Tambah</button>
+                <button type="button">Edit</button>
+                <button type="button">Hapus</button>
+            </div>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID User</th>
+                    <th>Tipe User</th>
+                    <th>Nama User</th>
+                    <th>Alamat</th>
+                    <th>Telepon</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Kasir</td>
+                    <td>shelly</td>
+                    <td>samarang</td>
+                    <td>08123451234</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Kasir</td>
+                    <td>fathir</td>
+                    <td>samarang</td>
+                    <td>08123125688</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Kasir</td>
+                    <td>imam</td>
+                    <td>jayaraga</td>
+                    <td>08129870986</td>
+                   
+                </tr>
+                <tr>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

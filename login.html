@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login dan Registrasi</title>
+</head>
+<body>
+    <h2>Form Registrasi</h2>
+    <form action="index.php" method="post">
+        <label for="reg_username">Username:</label>
+        <input type="text" id="reg_username" name="reg_username" required><br><br>
+        
+        <label for="reg_password">Password:</label>
+        <input type="password" id="reg_password" name="reg_password" required><br><br>
+        
+        <label for="reg_email">Email:</label>
+        <input type="email" id="reg_email" name="reg_email" required><br><br>
+        
+        <input type="submit" name="register" value="Daftar">
+    </form>
+
+    <h2>Form Login</h2>
+    <form action="index.php" method="post">
+        <label for="login_username">Username:</label>
+        <input type="text" id="login_username" name="login_username" required><br><br>
+        
+        <label for="login_password">Password:</label>
+        <input type="password" id="login_password" name="login_password" required><br><br>
+        
+        <input type="submit" name="login" value="Login">
+    </form>
+</body>
+</html>

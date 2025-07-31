@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping Bilangan Genap</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bilangan Genap</h1>
+    
+    <label for="numInput">Masukkan angka: </label>
+    <input type="number" id="numInput" min="1" placeholder="Masukkan angka">
+    <button onclick="showEvenNumbers()">Tampilkan Bilangan Genap</button>
+
+    <h2>Bilangan Genap:</h2>
+    <ul id="evenNumbersList"></ul>
+
+    <script>
+        function showEvenNumbers() {
+            // Ambil nilai dari input
+            let num = document.getElementById('numInput').value;
+            num = parseInt(num); // Mengonversi input menjadi angka integer
+
+            // Clear list sebelumnya
+            document.getElementById('evenNumbersList').innerHTML = '';
+
+            if (isNaN(num) || num < 1) {
+                alert('Masukkan angka yang valid!');
+                return;
+            }
+
+            // Loop untuk menampilkan bilangan genap
+            for (let i = 2; i <= num; i += 2) {
+                let listItem = document.createElement('li');
+                listItem.textContent = i;
+                document.getElementById('evenNumbersList').appendChild(listItem);
+            }
+        }
+    </script>
+</body>
+</html>
